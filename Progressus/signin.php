@@ -23,11 +23,6 @@ include "db_connection.php";
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
 </head>
 
 <body>
@@ -41,11 +36,7 @@ include "db_connection.php";
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
-					<!-- <li><a href="index.php">Home</a></li>
-					<li><a href="about.php">About</a></li>
-					
-					<li><a href="contact.php">Contact</a></li> -->
-					<li class="active"><a class="btn" href="signin.php">SIGN IN / SIGN UP</a></li>
+					<li class="active"><a class="btn" href="signup.php">SIGN UP</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -56,11 +47,6 @@ include "db_connection.php";
 
 	<!-- container -->
 	<div class="container">
-
-		<ol class="breadcrumb">
-			<li><a href="index.php">Home</a></li>
-			<li class="active">User access</li>
-		</ol>
 
 		<div class="row">
 			
@@ -155,17 +141,7 @@ include "db_connection.php";
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="simplenav">
-								<a href="#">Home</a> | 
-								<a href="about.html">About</a> |
-								<a href="sidebar-right.html">Sidebar</a> |
-								<a href="contact.html">Contact</a> |
-								<b><a href="signup.html">Sign up</a></b>
-							</p>
-						</div>
-					</div>
+					
 
 					<div class="col-md-6 widget">
 						<div class="widget-body">

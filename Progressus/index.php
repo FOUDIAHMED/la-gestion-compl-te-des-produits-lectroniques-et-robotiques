@@ -40,9 +40,6 @@ if(!isset($_SESSION['uname'])||!isset($_SESSION['pass'])){
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="about.php">About</a></li>
-					
-					<li><a href="contact.php">Contact</a></li>
 					<li><a class="btn" href="logout.php">logout</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
@@ -54,9 +51,9 @@ if(!isset($_SESSION['uname'])||!isset($_SESSION['pass'])){
 	<header id="head">
 		<div class="container">
 			<div class="row">
-				<h1 class="lead">AWESOME, CUSTOMIZABLE, FREE</h1>
-				<p class="tagline">PROGRESSUS: free business bootstrap template by <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">GetTemplate</a></p>
-				<p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DOWNLOAD NOW</a></p>
+				 <h1 class="lead">ElectroNacer</h1>
+				<!--<p class="tagline">PROGRESSUS: free business bootstrap template by <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">GetTemplate</a></p>
+				<p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DOWNLOAD NOW</a></p> -->
 			</div>
 		</div>
 	</header>
@@ -250,6 +247,7 @@ if(!isset($_SESSION['uname'])||!isset($_SESSION['pass'])){
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
+	
 </body>
 </html>
 <?php }

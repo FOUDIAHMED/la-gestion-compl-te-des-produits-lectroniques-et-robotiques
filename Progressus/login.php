@@ -1,7 +1,6 @@
 <?php 
 session_start();
 
-header('location:index.php');
 include "db_connection.php";
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
@@ -30,11 +29,21 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             // Use mysqli_fetch_assoc to get an associative array
             $row = mysqli_fetch_assoc($result);
 
-            if ($row && $row['username'] === $uname && $row['mot_passe'] === $pass) {
-                $_SESSION['uname']=$_POST['username'];
-				$_SESSION['pass']=$_POST['password'];
-                header("Location: index.php");
+            if ($row && $row['username'] === $uname && $row['mot_passe'] === $pass ) {
+				if( $row['ro_le']==='admin'){
+					$_SESSION['uname']=$_POST['username'];
+					$_SESSION['pass']=$_POST['password'];
+					header("Location: admin.php");
                 exit();
+				}
+				if( $row['valide']===1){
+					$_SESSION['uname']=$_POST['username'];
+					$_SESSION['pass']=$_POST['password'];
+					header("Location: index.php?");
+				}else{
+					header("Location: signin.php?error=sakofaki");
+				}
+                
             } else {
                 header("Location: signin.php?error=Incorrect User name or password");
                 exit();
